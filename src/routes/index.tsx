@@ -1,4 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
+
+import profilePhoto from "@/assets/kim-avatar.png.asset.json";
 import {
   ArrowRight,
   CalendarCheck,
