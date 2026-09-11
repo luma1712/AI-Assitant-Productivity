@@ -1,4 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
+
+import profilePhoto from "@/assets/kim-avatar.png.asset.json";
 import {
   ArrowRight,
   CalendarCheck,
@@ -92,7 +94,15 @@ function Dashboard() {
                 <Badge className="border-none bg-primary-foreground/15 text-primary-foreground">
                   AI Workplace Productivity Assistant
                 </Badge>
-                <h2 className="text-2xl font-semibold sm:text-3xl">Welcome back</h2>
+                <div className="flex items-center gap-3">
+                  <img
+                    src={profilePhoto.url}
+                    alt="Profile photo of Kim Anesipho"
+                    className="size-14 rounded-full object-cover ring-2 ring-primary-foreground/30"
+                    loading="lazy"
+                  />
+                  <h2 className="text-2xl font-semibold sm:text-3xl">Welcome back, Kim</h2>
+                </div>
                 <p className="text-sm text-primary-foreground/80">
                   Automate the routine parts of your workday — drafting, summarising, planning and
                   researching — and keep your attention on the work that matters.
